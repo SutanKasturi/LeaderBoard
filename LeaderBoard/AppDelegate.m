@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Constans.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    [UINavigationBar appearance].tintColor = CHECKED_BUTTON_COLOR;
+    
+    self.viewController = [[ViewController alloc] init];
+    
+    self.navController = [[UINavigationController alloc] initWithRootViewController:self.viewController];
+    
+    self.window.rootViewController = self.navController;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

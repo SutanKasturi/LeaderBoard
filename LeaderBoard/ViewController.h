@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CheckButton.h"
+#import "RoundedView.h"
 
 @interface ViewController : UIViewController
-
 
 @end
 
