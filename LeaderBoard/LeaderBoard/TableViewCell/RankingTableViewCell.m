@@ -61,7 +61,7 @@
 #pragma mark - Setup View
 
 - (void) setupViews
-{
+{    
     self.containerView = [UIView new];
     self.containerView.translatesAutoresizingMaskIntoConstraints = NO;
     self.containerView.backgroundColor = [UIColor colorWithRed:0 green:0.29 blue:0.59 alpha:0.2];
@@ -200,7 +200,7 @@
     [self.containerView addConstraints:name_constraint_POS_V];
     [self.containerView addConstraints:name_constraint_POS_H];
     
-    self.selectionStyle = UITableViewCellSelectionStyleNone;
+//    self.selectionStyle = UITableViewCellSelectionStyleBlue;
 }
 
 @end
